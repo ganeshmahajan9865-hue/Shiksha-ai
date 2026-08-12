@@ -32,22 +32,33 @@ export default function Navbar() {
           📝 Quiz
         </Link>
         <Link
+          href="/learning-path"
+          className={`nav-link${pathname === "/learning-path" ? " active" : ""}`}
+        >
+          🛣️ Learning Path
+        </Link>
+        <Link
+          href="/scholarships"
+          className={`nav-link${pathname === "/scholarships" ? " active" : ""}`}
+        >
+          🎓 Scholarships
+        </Link>
+        <Link
           href="/progress"
           className={`nav-link${pathname === "/progress" ? " active" : ""}`}
         >
-          
           📊 Progress
         </Link>
         <Link
           href="/blog"
           className={`nav-link${pathname === "/blog" ? " active" : ""}`}
         >
-          
           Blog
         </Link>
         <Link href="/onboarding" className="nav-link nav-cta">
           Get Started
         </Link>
+
       </div>
     </nav>
   );
